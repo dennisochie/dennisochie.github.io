@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maureen Achieng</title>
+    <style>
+       
+          
+          .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+          }
+          
+          .row::after {
+            content: "";
+            clear: both;
+            display: table;
+          }
+        </style>
+</head>
+<body>
+  <button onclick="typeWriter()">Click me to  activate reading of  information about me </button>
+
+  <p id="demo"></p>
+  
+  <script>
+  var i = 0;
+  var txt = 'Maureen Achieng, Born in Ingahwa village in Tingare West Sub Location.Tingare West is a Sub Location found in North Uholo Location, Sigomere Division Ugunja District and in Siaya County.She is a bussiness woman who is succesfully enterpreneural in her adventures all over the years in the Nairobi County.A  certified dealer in Cosmetics countywide, That is my mom.';
+  var speed = 50;
+  
+  function typeWriter() {
+    if (i < txt.length) {
+      document.getElementById("demo").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+  </script>
+    <p>
+    </p> 
+          <div class="row">
+            <div class="column">
+              <img src="mo1.jpg" alt="Moureen Achieng" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="mo2.jpg" alt="Mourine Achieng" style="width:100%">
+            </div>
+          </div>
+
+</body>
+</html>

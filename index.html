@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        
+        body {
+  background-image: url('ochieng_ouma.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}    
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+img {
+  border-radius: 8px;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+    
+    </style>
+</head>
+<body>
+  <div class="topnav">
+    <a href="educational_background.html">Education Background</a>
+    <a class="unactive" href="About me.html">About me</a>
+    <a href="contactinfo.html">My Contact Information</a>
+    <a href="Hobbies.html">My hobby</a>
+    
+  </div>
+  
+  <div style="padding-left:16px">
+   <header>
+    <div class="header">
+       <h3>Welcome to My First Website</h3> 
+    </div>
+   </header>
+  
+  <marquee speed = "4">THE FIRST WEBSITE OF OCHIENG DENNIS OUMA</marquee>
+   <p><h3><br>Ochieng Dennis Ouma is an IT consultant and a web designer.<br>
+    Am a second year student in Kenyatta University,Main Campus which is alocated along Thika Road.Am pursuing a Bachelor's degree in Information Technology, a course offered in the Department 0f Computing and Information Technology cartegorised  under the School of Engineering and Architecture(SEA). </br> </h3>
+   
+    <div class="container">
+      <div style="text-align:center">
+        <h2>Contact me here:</h2>
+        <p> Please leave us a message</p>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img src="/w3images/map.jpg" style="width:100%">
+        </div>
+        <div class="column">
+          <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Kenya</option>
+              <option value="canada">Uganda</option>
+              <option value="usa">Tanzania</option>
+            </select>
+ 
+             
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>
+    
+</body>
+</html>
